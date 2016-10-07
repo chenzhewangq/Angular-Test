@@ -1,23 +1,45 @@
-<div class="jumbotron">
-  <h1>Hello Angular TEST</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
-</div>
-
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
-
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
-
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
-</div>
+<div class="home-page">
+      <div class="home-page-nav">
+        <div><span>项目名称：</span><input type="text"></div>
+        <div><span>项目经理：</span><input type="text"></div>
+        <div><span>项目状态：</span>
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle btn-sm" type="button" id="dropdownMenu1" data-toggle="dropdown">
+              Dropdown
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">进行中</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">已结束</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">计划中</a></li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <button type="button" class="btn btn-primary btn-sm">查询</button>
+          <button type="button" class="btn btn-success btn-sm">添加</button>
+        </div>
+      </div>
+      <table class="table table-bordered">
+        <thead>
+          <th>项目名称</th>
+          <th>项目编号</th>
+          <th>项目开始时间</th>
+          <th>项目结束时间</th>
+          <th>项目经理</th>
+          <th>项目状态</th>
+          <th>操作</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>集成开发管理</td>
+            <td>JCKF</td>
+            <td>2016-08-1</td>
+            <td>2017-08-1</td>
+            <td>吕振山</td>
+            <td>进行中</td>
+            <td><a href="#" ui-sref="projectManage"><span>进入项目</span></a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
