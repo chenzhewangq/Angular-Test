@@ -9,7 +9,7 @@
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="styles/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="styles/font-awesome/css/font-awesome.min.css">
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -22,26 +22,29 @@
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <header class="headerself clearfix">
-      <div id="header-bck"></div>
-      <img class="header_img" src="logo_01.png" alt="中国移动">
-      <nav class="header_nav clearfix">
-        <ul class="clearfix">
-          <li><a class="header_btn" href="#" ui-sref="main"><b>项目管理</b></a></li>
-          <li><a class="header_btn" href="#"><b>用户管理</b></a></li>
-          <li><a class="header_btn" href="#"><b>版本管理</b></a></li>
-        </ul>
-      </nav>
-      <div class="header_sign_in">
-        <ul class="clearfix">
-          <li><a class="header-btn-sign" href="#"><i class="icon-off" style="margin-right: 5px;"></i>退出</a></li>
-          <li style="color: white;"> | </li>
-          <li><a class="header-btn-sign" href="#"><i class="icon-user-md" style="margin-right: 5px;"></i>登录</a></li>
-        </ul>
-      </div>
-    </header>
-    <div ui-view style="height: 100%" class="clearfix"></div>
-
+    <div class="percent">
+      <header class="headerself clearfix">
+        <div id="header-bck"></div>
+        <img class="header_img" src="images/logo_04.png" alt="中国移动">
+        <nav class="header_nav clearfix">
+          <ul class="clearfix">
+            <li><a class="header_btn" href="#" ui-sref="main"><b>项目管理</b></a></li>
+            <li><a class="header_btn" href="#"><b>用户管理</b></a></li>
+            <li><a class="header_btn" href="#"><b>版本管理</b></a></li>
+          </ul>
+        </nav>
+        <div class="header_sign_in">
+          <ul class="clearfix">
+            <li><a class="header-btn-sign" href="#"><i class="icon-off" style="margin-right: 5px;"></i>退出</a></li>
+            <li style="color: white;"> | </li>
+            <li><a class="header-btn-sign" href="#"><i class="icon-user-md" style="margin-right: 5px;"></i>登录</a></li>
+          </ul>
+        </div>
+      </header>
+    </div>
+    <!-- <div class="percent"> -->
+      <div ui-view style="height: 100%; width: 100%" class="clearfix"></div>
+    <!-- </div> -->
   
   
 
@@ -66,7 +69,7 @@
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="bower_components/angular-resource/angular-resource.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
@@ -78,8 +81,6 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/config/config.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
     <!-- endbuild -->
 
 

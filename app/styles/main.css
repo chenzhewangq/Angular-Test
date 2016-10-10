@@ -1,17 +1,19 @@
+/*背景色:#26354c*/
 * {
   margin: 0;
   padding: 0;
-
+  display: absolute
 }
 html {
   height: 100%;
-  width: 100%;
+  /*width: 100%;*/
 }
 body {
   font-family: '微软雅黑';
   font-size: 14px;
   height: 100%;
-  width: 100%;
+  /*width: 100%;*/
+  background-color: #26354c;
   color: #a2d3f9;
 }
 a {
@@ -23,6 +25,10 @@ a:hover {
 table {
   color: #f2f5f8;
 }
+.percent {
+  width: 100%;
+  background-color: #26354c;
+}
 .clearfix:after {
   content: '';
   display: block;
@@ -33,26 +39,27 @@ table {
   display: block;
   z-index: 999;
   opacity: 0.95;
-  margin: 0;
-  width: 100%;
+  margin: 0 auto;
+  /*width: 100%;*/
+  width: 1490px;
   height: 100px;
   
   border-bottom: 1px solid #ccc;
+  background: #26354c;
 
 }
 .headerself {
   /*position: relative;*/
   z-index: -1;
-  width: 100%;
-  height: 100px;
-  background: #26354c;
   /*opacity: 0.7;*/
 }
 .header_img {
   display: block;
   float: left;
 
-  margin: 12px 40px;
+  margin-top: -2px;
+  margin-left: 80px;
+  z-index: 999;
 }
 .header_nav {
   float: left;
@@ -125,7 +132,7 @@ table {
 .pro_main {
   /*position: absolute;*/
   padding: 0 50px;
-  width: 100%;
+  /*width: 100%;*/
   height: 100%;
   /*border-right: 1px solid #ccc;*/
 }
@@ -133,7 +140,7 @@ table {
   float:left;
   padding: 0 30px;
   height: 100%;
-  width: 100%;
+  /*width: 100%;*/
   /*border-right: 1px solid #ccc;*/
 }
 .pro_content_nav {
@@ -148,8 +155,7 @@ table {
   /*right: 100px;*/
 }
 #foward {
-  display: inline;
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 100%;
 }
